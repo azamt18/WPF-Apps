@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="524" Height="607">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Margin="0,0,0,4">
+        <Grid HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="517">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Width="517" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+                <Image x:Name="image" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="225" Source="C:\Users\Fathulla\OneDrive\Faktura\newlogo.png" Margin="9,9,0,-1"/>
+            </Border>
+        </Grid>
+        <Rectangle Fill="#FFFDFDFD" HorizontalAlignment="Left" Height="462" Margin="80,83,0,0" Stroke="Black" VerticalAlignment="Top" Width="385"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="177,101,0,0" TextWrapping="Wrap" Text="Войти в систему" VerticalAlignment="Top" Cursor="None" FontSize="24" TextAlignment="Center" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" Foreground="#FF2E9B13"/>
+        <Label x:Name="label" Content="Адрес эл. почты или телефон" HorizontalAlignment="Left" Margin="95,148,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="95,174,0,0" TextWrapping="Wrap" Text="998998190018" VerticalAlignment="Top" Width="350" FontSize="20" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}"/>
+        <Label x:Name="label1" Content="Пароль" HorizontalAlignment="Left" Margin="95,223,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="checkBox" Content="Запомнить меня" HorizontalAlignment="Left" Margin="95,303,0,0" VerticalAlignment="Top" IsChecked="True" FontSize="14"/>
+        <Label x:Name="label2" Content="Забыли пароль?" HorizontalAlignment="Left" Margin="95,326,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,-0.385" FontSize="14">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="label2_Copy" Content="Забыли имя пользователя?" HorizontalAlignment="Left" Margin="95,355,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.263,-0.385" FontSize="14">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="95,249,0,0" VerticalAlignment="Top" Width="350" Height="30" Password="123" SelectionOpacity="-4">
+            <PasswordBox.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Button x:Name="button" Content="Войти" HorizontalAlignment="Left" Margin="95,400,0,0" VerticalAlignment="Top" Width="350" Height="30" Background="#FF63CC32" FontSize="14"/>
+        <Label x:Name="label3" Content="Вы еще не зарегистрированы?" HorizontalAlignment="Left" Margin="177,455,0,0" VerticalAlignment="Top" FontSize="14">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="button_Copy" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="95,489,0,0" VerticalAlignment="Top" Width="350" Height="30" FontSize="14">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
